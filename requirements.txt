@@ -1,0 +1,16 @@
+# Python 3.10 or higher recommended.
+#
+# Install with:  pip install -r requirements.txt
+#
+# Notes:
+# - The audit execution scripts (run_*.py) require an LLM API key.
+# - The analysis_pipeline.py and determinism_tables.py scripts use only
+#   the Python standard library and do not need any of the packages below.
+# - The packages below are needed for data aggregation and figure scripts.
+
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.8
+Pillow>=10.0
+openai>=1.0

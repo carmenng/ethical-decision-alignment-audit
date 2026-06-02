@@ -1,0 +1,279 @@
+README
+
+This repository contains the data, scenario instruments, and analysis code for
+"Auditing LLM-Governed Social Robots with Culture-Specific Moral Gradients."
+
+Contents:
+(1) scenario prompts,
+(2) raw model audit outputs (57,600 decisions),
+(3) per-dilemma master summaries,
+(4) combined master summary,
+(5) analysis outputs (gradient concordance, governance typology, positional bias),
+(6) representative scripts documenting how audits were run and how analyses were computed,
+(7) publication figures.
+
+
+Quickstart
+==========
+
+Python 3.10 or higher is recommended.
+
+    pip install -r requirements.txt
+    cd 06_Code
+    python analysis_pipeline.py       # reproduces all files in 05_Analysis/
+    python determinism_tables.py      # reproduces determinism_*.csv files
+
+The analysis and determinism scripts use only Python's standard library at
+runtime; the packages in requirements.txt (separate) are needed for data aggregation
+and figure regeneration.
+
+
+Folder map
+==========
+
+01_Scenarios/
+    Input prompts organised by dilemma x prompting regime, with separate
+    CSV files per language. Each file contains scenario_id, domain, title,
+    and scenario_text columns.
+
+    Filename convention: [DILEMMA]_[PROMPTING]_[LANGUAGE].csv
+    Example: MF_PLAIN_EN.csv, YO_FSCOT_JP.csv
+
+    Total: 48 prompt files (3 dilemmas x 4 prompting regimes x 4 languages).
+
+    These are the direct inputs to the audit execution scripts (run_*.py).
+
+    Note: Non-English CSVs (CN/JP/ES) should be viewed in a plain text editor
+    (not Excel) to avoid character/encoding issues. See 01_Scenarios/README.txt
+    for details.
+
+
+02_Raw_Data/
+    Raw model responses (decision-level logs, 100 runs per scenario).
+    Organised into four sub-folders, one per prompting regime:
+
+        Raw_Data_MF_YO_HL_PLAIN/    (12 files: 3 dilemmas x 4 models)
+        Raw_Data_MF_YO_HL_CC/       (12 files)
+        Raw_Data_MF_YO_HL_ZSCOT/    (12 files)
+        Raw_Data_MF_YO_HL_FSCOT/    (12 files)
+
+    Filename convention: [DILEMMA]_[PROMPTING]_results_[llm].csv
+    Example: MF_PLAIN_results_gpt4o.csv, HL_FSCOT_results_mistral_large.csv
+
+    Each file contains 1,200 rows (12 scenarios x 100 runs) with columns:
+        scenario_id, language, run_number, decision, explanation
+
+    48 files total (3 dilemmas x 4 prompting regimes x 4 models).
+
+    Produced by: 06_Code/run_plain.py, run_cc.py, run_zscot.py, run_fscot.py
+
+
+03_Master_Summary/
+    Per-dilemma aggregation from raw decision logs. Each row is one
+    experimental condition (one model x one prompting x one domain x one
+    language = one scenario). 192 rows per dilemma file.
+
+    Files:
+        MF_master_summary.csv
+        YO_master_summary.csv
+        HL_master_summary.csv
+
+    Columns:
+        Dilemma, Domain, Language, Prompting, LLM, Scenario_ID,
+        MME_Score, Fraction_A, SD, CI_Lower, CI_Upper, P_Value
+
+    MME_Score values are min-max normalised AMCEs from the MME visualisation
+    portal across 117 ranked countries (please see paper Appendix A.2-A.3 for
+    formal specification and verification against the MME open dataset).
+
+    Produced by: 06_Code/data_aggregation.py (Stage 1)
+
+
+04_Combined_Summary/
+    Simple concatenation of the three dilemma summary files.
+
+    Files:
+        combined_master_summary.csv (576 rows, 12 columns)
+
+    This is the input for the analysis framework.
+
+    Produced by: 06_Code/data_aggregation.py (Stage 2)
+
+
+05_Analysis/
+    All analytical outputs from the two-layer evaluation framework.
+
+    Layer 1 -- Gradient concordance (Kendall's tau):
+        tau_per_condition.csv          (144 rows, one per condition)
+        tau_aggregated.csv             (103 rows, all factorial aggregations)
+        spearman_results.csv           (supplementary rank correlation)
+
+    Layer 2 -- Governance typology (seven-bin classification):
+        revised_master_v3.csv          (576 rows, master file with all
+                                        analytical columns)
+        typology_summary_overall.csv
+        typology_summary_by_model.csv
+        typology_summary_by_dilemma.csv
+        typology_summary_by_language.csv
+        typology_summary_by_prompting.csv
+        typology_summary_by_domain.csv
+        typology_summary_by_model_dilemma.csv
+        typology_summary_by_model_language.csv
+        typology_summary_by_model_prompting.csv
+        typology_summary_by_language_dilemma.csv
+        typology_summary_by_dilemma_prompting.csv
+        typology_summary_by_model_dilemma_prompting.csv
+        typology_summary_by_model_language_dilemma.csv
+
+    Positional bias robustness (tested at two thresholds):
+        posbias_layer1_delta_0.05_per_condition.csv
+        posbias_layer1_delta_0.05_summary.csv
+        posbias_layer1_delta_0.1_per_condition.csv
+        posbias_layer1_delta_0.1_summary.csv
+        posbias_layer2_delta_0.05_changed_cells.csv
+        posbias_layer2_delta_0.05_summary.csv
+        posbias_layer2_delta_0.1_changed_cells.csv
+        posbias_layer2_delta_0.1_summary.csv
+
+    Determinism tables (Appendix D):
+        determinism_by_model_dilemma.csv
+        determinism_by_model_language.csv
+        determinism_by_prompting.csv
+
+    Produced by: 06_Code/analysis_pipeline.py
+                 06_Code/determinism_tables.py
+
+
+06_Code/
+    Audit execution scripts (4 files):
+        run_plain.py     -- PLAIN prompting (base condition)
+        run_cc.py        -- Cultural Calibration prompting
+        run_zscot.py     -- Zero-Shot Chain-of-Thought prompting
+        run_fscot.py     -- Few-Shot Chain-of-Thought prompting
+
+        These are representative implementations of the audit procedure for
+        each prompting regime: forced A/B parsing, repeated sampling
+        (100 runs), retry/timeout handling, CSV logging.
+
+        Each file demonstrates GPT-4o as an example; other LLMs (DeepSeek R1,
+        Mistral Large, Gemini 2.0 Flash Lite) were evaluated using analogous
+        logic with API-specific adjustments. Each file as shipped covers one
+        dilemma; substitute the dilemma constant near the top of the file
+        (e.g., dilemma = 'HL') to run the others.
+
+        Input: scenario prompt CSVs from 01_Scenarios/.
+        Output: raw decision logs saved to 02_Raw_Data/.
+
+    Data aggregation script:
+        data_aggregation.py
+
+        Stage 1: Aggregates raw decision logs into per-dilemma master
+        summaries (Fraction_A, SD, CI bounds, P_Value, MME_Score per
+        condition).
+        Input: 48 raw CSV files from 02_Raw_Data/.
+        Output: MF/YO/HL_master_summary.csv (to 03_Master_Summary/).
+
+        Stage 2: Concatenates three dilemma summaries into one file.
+        Output: combined_master_summary.csv (to 04_Combined_Summary/).
+
+    Analysis framework script:
+        analysis_pipeline.py
+
+        Takes combined_master_summary.csv as input and computes all
+        analytical outputs: Kendall's tau per condition and at all
+        aggregation levels, three-dimensional governance typology
+        (gradient fit x direction x deliberation), seven-bin
+        classification, typology summaries at all factorial levels,
+        positional bias stress tests for both layers, and Spearman's rho
+        as a Layer 1 supplementary measure.
+
+        Input: combined_master_summary.csv (from 04_Combined_Summary/).
+        Output: revised_master_v3.csv + all summary tables (to 05_Analysis/).
+
+    Determinism script:
+        determinism_tables.py
+
+        Computes standalone determinism rate tables.
+        Input: revised_master_v3.csv (from 05_Analysis/).
+        Output: determinism_by_model_dilemma/language/prompting.csv
+        (to 05_Analysis/).
+
+    Visualisation scripts:
+        figure_345.py
+            Generates Figures 3, 4, and 5 (Layer 1 gradient concordance).
+            Input: tau_aggregated.csv, spearman_results.csv (from 05_Analysis/).
+            Output: figure_3.png, figure_45.png, figure_345_combined.png.
+
+        figure_6.py
+            Generates Figure 6 (governance typology heatmap, 576 cells).
+            Input: revised_master_v3.csv (from 05_Analysis/).
+            Output: figure_6.png.
+
+    Notes:
+        - API keys are required to rerun audits and are not included.
+          Set OPENAI_API_KEY (or the equivalent for other providers) before
+          running run_*.py.
+        - Scripts were originally run in Google Colab; I/O paths in the
+          analysis and determinism scripts are set near the top and may need
+          to be adapted for your environment.
+        - The figure scripts (figure_345.py, figure_6.py) were authored as
+          Colab notebooks and use Colab-style file uploads; replace the
+          upload calls with pd.read_csv() pointing to the relevant file in
+          05_Analysis/.
+
+
+07_Visuals/
+    All publication figures.
+
+    Static figures (no data analysis required):
+        Figure1-deployer_lifecycle_illustrative.png
+        Figure2-MME-gradients.png
+
+    Data-driven figures (require CSV files from 05_Analysis/ to regenerate):
+        Figure345_combined.png
+            Input: tau_aggregated.csv, spearman_results.csv
+            Code:  06_Code/figure_345.py
+
+        Figure6-full-heatmap.png
+            Input: revised_master_v3.csv
+            Code:  06_Code/figure_6.py
+
+
+Data pipeline (full reproduction order)
+========================================
+
+    01_Scenarios/
+         |
+         v  [run_plain.py, run_cc.py, run_zscot.py, run_fscot.py]
+         |  (one script per prompting regime; each run covers one dilemma
+         |   x one model; needs API access; 48 runs total to cover the
+         |   full factorial)
+    02_Raw_Data/
+         |   PLAIN/  CC/  ZSCOT/  FSCOT/
+         |   (48 files: 3 dilemmas x 4 models x 4 prompting regimes)
+         |
+         v  [data_aggregation.py, Stage 1]
+         |  (aggregate 100 runs per scenario into Fraction_A, SD, CI, P_Value)
+         |
+    03_Master_Summary/
+         |   MF_master_summary.csv, YO_master_summary.csv,
+         |   HL_master_summary.csv
+         |
+         v  [data_aggregation.py, Stage 2]
+         |  (concatenate three dilemma files)
+         |
+    04_Combined_Summary/
+         |   combined_master_summary.csv (576 rows)
+         |
+         v  [analysis_pipeline.py]
+         |  (Layer 1: tau; Layer 2: typology; positional bias)
+         |
+    05_Analysis/
+         |   revised_master_v3.csv + tau tables + typology summaries
+         |
+         v  [determinism_tables.py]
+         |  (detailed determinism breakdowns --> determinism_by_*.csv)
+         |
+         v  [figure_345.py, figure_6.py]
+         |  (data-driven publication figures)
+    Figures 3-6
