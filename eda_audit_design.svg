@@ -1,0 +1,158 @@
+<svg width="100%" viewBox="0 0 680 1500" role="img" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+<title>The design logic of the Ethical Decision Alignment Audit</title>
+<desc>A deployer-facing view of the audit: the pluralistic baseline as a coordinate system, scenario and attribute controls, Layer 1 gradient tracking by Kendall's tau, Layer 2 three diagnostic dimensions, a seven-level severity scale linked to mitigation pathways, and a decision the audit leaves to the deployer. Paper specifics appear as the beta-version method.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+
+<text x="40" y="33" font-size="20" font-weight="bold" fill="#1a1a1a">Ethical Decision Alignment Audit for LLM-driven robots</text>
+<text x="40" y="54" font-size="13" fill="#5F5E5A">Detecting attribute-based discrimination before an LLM-driven robot imposes one culture's defaults</text>
+<text x="40" y="71" font-size="13" fill="#5F5E5A">on the people it serves, in real-time care, safety, and access.</text>
+
+<g transform="translate(0,32)">
+<rect x="40" y="52" width="600" height="128" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="58" y="78" font-size="12.5" fill="#444441">As LLM-driven robots prioritise real-time care, safety, and access, model biases materialise into</text>
+<text x="58" y="95" font-size="12.5" fill="#444441">attribute-based discrimination in embodied action. Deployers should audit the LLMs they procure</text>
+<text x="58" y="112" font-size="12.5" fill="#444441">in robot roles, yet LLM-robot ethical reasoning is vastly unregulated, and auditing with any single</text>
+<text x="58" y="129" font-size="12.5" fill="#444441">benchmark would disregard diverse human contexts.</text>
+<text x="58" y="153" font-size="12.5" font-weight="bold" fill="#2C2C2A">So the audit tests whether a model differentiates between deployment contexts at all.</text>
+<text x="58" y="171" font-size="12" fill="#5F5E5A">Behaving identically everywhere is itself a first-order alignment failure.</text>
+
+<line x1="340" y1="180" x2="340" y2="204" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="40" y="204" width="600" height="162" rx="10" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="58" y="230" font-size="16" font-weight="bold" fill="#633806">1 · Pluralistic baseline</text>
+<text x="58" y="252" font-size="12" fill="#854F0B">A coordinate system of how strongly societies differ on a given prioritisation, used as a</text>
+<text x="58" y="268" font-size="12" fill="#854F0B">descriptive baseline. The audit tests whether a model can calibrate toward multiple cultural positions.</text>
+
+<line x1="120" y1="298" x2="560" y2="298" stroke="#BA7517" stroke-width="0.5"/>
+<text x="60" y="302" font-size="10.5" fill="#854F0B">weaker</text>
+<text x="600" y="288" font-size="10.5" fill="#854F0B" text-anchor="end">stronger</text>
+<circle cx="180" cy="298" r="7" fill="#0F6E56"/><text x="180" y="320" font-size="11" font-weight="bold" fill="#085041" text-anchor="middle">JP</text>
+<circle cx="290" cy="298" r="7" fill="#E24B4A"/><text x="290" y="320" font-size="11" font-weight="bold" fill="#791F1F" text-anchor="middle">CN</text>
+<circle cx="420" cy="298" r="7" fill="#BA7517"/><text x="420" y="320" font-size="11" font-weight="bold" fill="#633806" text-anchor="middle">ES</text>
+<circle cx="520" cy="298" r="7" fill="#185FA5"/><text x="520" y="320" font-size="11" font-weight="bold" fill="#042C53" text-anchor="middle">EN</text>
+<text x="58" y="338" font-size="11.5" fill="#633806" font-style="italic">Beta version: the Moral Machine Experiment (MIT).</text>
+<text x="58" y="352" font-size="11.5" fill="#633806" font-style="italic">A comparable cross-cultural preference dataset may be substituted.</text>
+
+<line x1="340" y1="366" x2="340" y2="378" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="40" y="378" width="290" height="120" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="58" y="404" font-size="16" font-weight="bold" fill="#3C3489">2 · Scenarios</text>
+<text x="58" y="426" font-size="12" fill="#26215C">Forced-choice robot scenarios</text>
+<text x="58" y="442" font-size="12" fill="#26215C">where two options carry a</text>
+<text x="58" y="458" font-size="12" fill="#26215C">symmetrical, non-trivial loss.</text>
+<text x="58" y="476" font-size="11" fill="#3C3489" font-style="italic">Built parallel to the baseline.</text>
+
+<rect x="350" y="378" width="290" height="120" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="368" y="404" font-size="16" font-weight="bold" fill="#085041">3 · Attributes</text>
+<text x="368" y="426" font-size="12" fill="#0F6E56">Each scenario differs on one</text>
+<text x="368" y="442" font-size="12" fill="#0F6E56">attribute drawn from the baseline.</text>
+<text x="368" y="468" font-size="11" fill="#085041" font-style="italic">Beta: group size, age, social</text>
+<text x="368" y="481" font-size="11" fill="#085041" font-style="italic">status. Others can be added.</text>
+
+<line x1="185" y1="498" x2="325" y2="516" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="495" y1="498" x2="355" y2="516" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="40" y="516" width="600" height="232" rx="10" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="58" y="542" font-size="16" font-weight="bold" fill="#0C447C">4 · Layer 1 — cross-country ethical preference concordance</text>
+<text x="58" y="564" font-size="12" fill="#185FA5">Rather than measuring proximity to a number, it checks whether the model's choices follow</text>
+<text x="58" y="580" font-size="12" fill="#185FA5">the order the baseline documents — across countries, languages, and deployer-accessible prompts.</text>
+<text x="58" y="600" font-size="11.5" fill="#0C447C" font-weight="bold">Method: Kendall's τ, a scale-free rank test — no threshold or unit conversion required.</text>
+
+<text x="125" y="628" font-size="11.5" font-weight="bold" fill="#085041" text-anchor="middle">Tracking</text>
+<line x1="70" y1="648" x2="180" y2="648" stroke="#B4B2A9" stroke-width="0.5"/>
+<circle cx="80" cy="648" r="5" fill="#0F6E56"/><circle cx="105" cy="648" r="5" fill="#E24B4A"/><circle cx="140" cy="648" r="5" fill="#BA7517"/><circle cx="170" cy="648" r="5" fill="#185FA5"/>
+<text x="125" y="670" font-size="11" fill="#185FA5" text-anchor="middle">order matches</text>
+
+<text x="340" y="628" font-size="11.5" font-weight="bold" fill="#854F0B" text-anchor="middle">Culture-blind</text>
+<line x1="285" y1="648" x2="395" y2="648" stroke="#B4B2A9" stroke-width="0.5"/>
+<circle cx="337" cy="648" r="5" fill="#0F6E56"/><circle cx="340" cy="648" r="5" fill="#E24B4A"/><circle cx="343" cy="648" r="5" fill="#BA7517"/><circle cx="346" cy="648" r="5" fill="#185FA5"/>
+<text x="340" y="670" font-size="11" fill="#185FA5" text-anchor="middle">same output everywhere</text>
+
+<text x="555" y="628" font-size="11.5" font-weight="bold" fill="#791F1F" text-anchor="middle">Inverted</text>
+<line x1="500" y1="648" x2="610" y2="648" stroke="#B4B2A9" stroke-width="0.5"/>
+<circle cx="510" cy="648" r="5" fill="#185FA5"/><circle cx="540" cy="648" r="5" fill="#BA7517"/><circle cx="575" cy="648" r="5" fill="#E24B4A"/><circle cx="600" cy="648" r="5" fill="#0F6E56"/>
+<text x="555" y="670" font-size="11" fill="#185FA5" text-anchor="middle">order reversed</text>
+
+<text x="58" y="702" font-size="12" font-weight="bold" fill="#0C447C">A model indifferent across cultures in ethical trade-offs is a first-order pluralism failure:</text>
+<text x="58" y="718" font-size="12" font-weight="bold" fill="#0C447C">it imposes one default precisely where societies differ.</text>
+<text x="58" y="736" font-size="11" fill="#185FA5" font-style="italic">Extensible to any country or language the baseline documents, if scenarios are rebuilt to match.</text>
+
+<line x1="340" y1="748" x2="340" y2="766" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="40" y="766" width="600" height="434" rx="10" fill="#D6E8FA" stroke="#185FA5" stroke-width="0.5"/>
+<text x="58" y="792" font-size="16" font-weight="bold" fill="#0C447C">5 · Layer 2 — decomposing model failure modes in reasoning behaviour</text>
+<text x="58" y="814" font-size="12" fill="#185FA5">Each country output is read on three dimensions. Together they point toward different remedies.</text>
+
+<rect x="58" y="828" width="180" height="104" rx="8" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text x="148" y="850" font-size="12.5" font-weight="bold" fill="#042C53" text-anchor="middle">Differentiation</text>
+<text x="148" y="869" font-size="10.5" fill="#0C447C" text-anchor="middle">local concordance:</text>
+<text x="148" y="883" font-size="10.5" fill="#0C447C" text-anchor="middle">tracks, blind, inverts</text>
+<text x="148" y="903" font-size="10" fill="#185FA5" text-anchor="middle">does it trace the</text>
+<text x="148" y="916" font-size="10" fill="#185FA5" text-anchor="middle">documented order</text>
+
+<rect x="250" y="828" width="180" height="104" rx="8" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text x="340" y="850" font-size="12.5" font-weight="bold" fill="#042C53" text-anchor="middle">Direction</text>
+<text x="340" y="869" font-size="10.5" fill="#0C447C" text-anchor="middle">A-territory if Fraction A</text>
+<text x="340" y="883" font-size="10.5" fill="#0C447C" text-anchor="middle">≥ 0.5, else B-territory</text>
+<text x="340" y="903" font-size="10" fill="#185FA5" text-anchor="middle">which side of the</text>
+<text x="340" y="916" font-size="10" fill="#185FA5" text-anchor="middle">dilemma it falls on</text>
+
+<rect x="442" y="828" width="180" height="104" rx="8" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text x="532" y="850" font-size="12.5" font-weight="bold" fill="#042C53" text-anchor="middle">Deliberation</text>
+<text x="532" y="869" font-size="10.5" fill="#0C447C" text-anchor="middle">Fraction A at 0 or 1 is</text>
+<text x="532" y="883" font-size="10.5" fill="#0C447C" text-anchor="middle">deterministic, else variable</text>
+<text x="532" y="903" font-size="10" fill="#185FA5" text-anchor="middle">moral agility,</text>
+<text x="532" y="916" font-size="10" fill="#185FA5" text-anchor="middle">or a fixed rule</text>
+
+<line x1="340" y1="956" x2="340" y2="980" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<text x="58" y="1000" font-size="13.5" font-weight="bold" fill="#0C447C">These compose into seven severity levels, each linked to a mitigation pathway</text>
+<text x="58" y="1020" font-size="12" fill="#185FA5">A model can fail on several dimensions at once; the higher the level, the more urgent.</text>
+
+<rect x="58" y="1034" width="78" height="40" rx="6" fill="#4169E1"/>
+<text x="97" y="1059" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">1</text>
+<rect x="140" y="1034" width="78" height="40" rx="6" fill="#87CEEB"/>
+<text x="179" y="1059" text-anchor="middle" font-size="14" font-weight="bold" fill="#0C447C">2</text>
+<rect x="222" y="1034" width="78" height="40" rx="6" fill="#B0E0E6"/>
+<text x="261" y="1059" text-anchor="middle" font-size="14" font-weight="bold" fill="#0C447C">3</text>
+<rect x="304" y="1034" width="78" height="40" rx="6" fill="#F0F8FF" stroke="#d4a843" stroke-width="1"/>
+<text x="343" y="1059" text-anchor="middle" font-size="14" font-weight="bold" fill="#854F0B">4</text>
+<rect x="386" y="1034" width="78" height="40" rx="6" fill="#FFB6C1"/>
+<text x="425" y="1059" text-anchor="middle" font-size="14" font-weight="bold" fill="#72243E">5</text>
+<rect x="468" y="1034" width="78" height="40" rx="6" fill="#FF69B4"/>
+<text x="507" y="1059" text-anchor="middle" font-size="14" font-weight="bold" fill="#4B1528">6</text>
+<rect x="550" y="1034" width="72" height="40" rx="6" fill="#FF0000"/>
+<text x="586" y="1059" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">7</text>
+
+<text x="58" y="1094" font-size="12" fill="#185FA5">1 Calibrated</text>
+<text x="58" y="1112" font-size="12" fill="#185FA5">2 Rigid tracking</text>
+<text x="58" y="1130" font-size="12" fill="#185FA5">3 Gradient-sensitive overshoot</text>
+<text x="360" y="1094" font-size="12" fill="#185FA5">4 Gradient erased</text>
+<text x="360" y="1112" font-size="12" fill="#185FA5">5 Gradient inverted</text>
+<text x="360" y="1130" font-size="12" fill="#185FA5">6 Non-tracking contradiction</text>
+<text x="360" y="1148" font-size="12" fill="#185FA5">7 Non-tracking rigidity</text>
+
+<line x1="58" y1="1162" x2="622" y2="1162" stroke="#9DB8CE" stroke-width="0.5"/>
+<text x="58" y="1184" font-size="12" font-weight="bold" fill="#0F6E56">least severe</text>
+<text x="622" y="1184" text-anchor="end" font-size="12" font-weight="bold" fill="#A32D2D">most severe</text>
+
+<line x1="340" y1="1200" x2="340" y2="1216" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="40" y="1216" width="600" height="60" rx="10" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="3 3"/>
+<text x="58" y="1238" font-size="12" font-weight="bold" fill="#2C2C2A">What this beta version covers</text>
+<text x="58" y="1257" font-size="11" fill="#444441">4 LLMs × 4 country-languages × 4 prompting regimes × 3 robot domains (care, education, public services),</text>
+<text x="58" y="1271" font-size="11" fill="#444441">across 57,600 decisions. Deployers can substitute their own models, markets, prompts, and domains.</text>
+
+<line x1="340" y1="1276" x2="340" y2="1296" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="40" y="1296" width="600" height="128" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="58" y="1322" font-size="16" font-weight="bold" fill="#2C2C2A">7 · From signal to remediation</text>
+<text x="58" y="1344" font-size="12" fill="#444441">Each severity level maps to a distinct remediation pathway, from model substitution to localisation</text>
+<text x="58" y="1360" font-size="12" fill="#444441">to human oversight. The audit localises and grades the risk; the deployer sets the context-appropriate</text>
+<text x="58" y="1376" font-size="12" fill="#444441">response with affected communities, within rights-based constraints.</text>
+<text x="58" y="1394" font-size="11" fill="#5F5E5A" font-style="italic">Extends: Ng, C. and Kasneci, G. (2026). Auditing LLM-Governed Social Robots with Culture-Specific Moral Gradients.</text>
+<text x="58" y="1408" font-size="11" fill="#5F5E5A" font-style="italic">FAccT '26, Montreal. https://doi.org/10.1145/3805689.3812366</text>
+</g>
+</svg>
