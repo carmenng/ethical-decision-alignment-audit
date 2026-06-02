@@ -60,7 +60,7 @@ NOTE: **A deployer may substitute future population-level data, provided scenari
 The full code, scenarios, and data are archived as the FAccT 2026 supplementary materials:
 OSF repository: [LINK](https://osf.io/wmbpj/)
 
-**See REPRODUCTION.txt for how to run the audit scripts.**
+**See REPRODUCTION GUIDE.txt for how to run the audit scripts.**
 
 ## Citation ##
 
