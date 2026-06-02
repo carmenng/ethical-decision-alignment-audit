@@ -1,4 +1,4 @@
-README
+REPRODUCTION GUIDE
 
 This repository contains the data, scenario instruments, and analysis code for
 "Auditing LLM-Governed Social Robots with Culture-Specific Moral Gradients."
