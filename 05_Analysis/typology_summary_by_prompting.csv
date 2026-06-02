@@ -1,0 +1,5 @@
+Prompting,N,Bin1_Calibrated_count,Bin1_Calibrated_pct,Bin2_Rigid_tracking_count,Bin2_Rigid_tracking_pct,Bin3_Gradient_sensitive_overshoot_count,Bin3_Gradient_sensitive_overshoot_pct,Bin4_Gradient_erased_count,Bin4_Gradient_erased_pct,Bin5_Gradient_inverted_count,Bin5_Gradient_inverted_pct,Bin6_Non_tracking_contradiction_count,Bin6_Non_tracking_contradiction_pct,Bin7_Non_tracking_rigidity_count,Bin7_Non_tracking_rigidity_pct,Tracking_A_bins12_count,Tracking_A_bins12_pct,All_tracking_bins123_count,All_tracking_bins123_pct,NonTracking_B_bins67_count,NonTracking_B_bins67_pct,Deterministic_count,Deterministic_pct
+CC,144,7,4.9,21,14.6,18,12.5,54,37.5,25,17.4,5,3.5,14,9.7,28,19.4,46,31.9,19,13.2,96,66.7
+FSCOT,144,12,8.3,32,22.2,37,25.7,36,25.0,17,11.8,5,3.5,5,3.5,44,30.6,81,56.2,10,6.9,82,56.9
+PLAIN,144,7,4.9,30,20.8,16,11.1,48,33.3,24,16.7,9,6.2,10,6.9,37,25.7,53,36.8,19,13.2,85,59.0
+ZSCOT,144,22,15.3,11,7.6,18,12.5,25,17.4,47,32.6,14,9.7,7,4.9,33,22.9,51,35.4,21,14.6,39,27.1

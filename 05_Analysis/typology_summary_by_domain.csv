@@ -1,0 +1,4 @@
+Domain,N,Bin1_Calibrated_count,Bin1_Calibrated_pct,Bin2_Rigid_tracking_count,Bin2_Rigid_tracking_pct,Bin3_Gradient_sensitive_overshoot_count,Bin3_Gradient_sensitive_overshoot_pct,Bin4_Gradient_erased_count,Bin4_Gradient_erased_pct,Bin5_Gradient_inverted_count,Bin5_Gradient_inverted_pct,Bin6_Non_tracking_contradiction_count,Bin6_Non_tracking_contradiction_pct,Bin7_Non_tracking_rigidity_count,Bin7_Non_tracking_rigidity_pct,Tracking_A_bins12_count,Tracking_A_bins12_pct,All_tracking_bins123_count,All_tracking_bins123_pct,NonTracking_B_bins67_count,NonTracking_B_bins67_pct,Deterministic_count,Deterministic_pct
+D1,192,15,7.8,34,17.7,21,10.9,57,29.7,51,26.6,8,4.2,6,3.1,49,25.5,70,36.5,14,7.3,95,49.5
+D2,192,19,9.9,33,17.2,39,20.3,40,20.8,42,21.9,11,5.7,8,4.2,52,27.1,91,47.4,19,9.9,94,49.0
+D3,192,14,7.3,27,14.1,29,15.1,66,34.4,20,10.4,14,7.3,22,11.5,41,21.4,70,36.5,36,18.8,113,58.9

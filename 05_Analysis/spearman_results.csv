@@ -1,0 +1,6 @@
+Model,Rho,N_points
+Overall (all models),0.0632,12
+GPT-4o,-0.1404,12
+DeepSeek R1,-0.0982,12
+Mistral Large,0.4702,12
+Gemini Flash,0.0842,12

@@ -1,0 +1,17 @@
+LLM_std,Language,N,Bin1_Calibrated_count,Bin1_Calibrated_pct,Bin2_Rigid_tracking_count,Bin2_Rigid_tracking_pct,Bin3_Gradient_sensitive_overshoot_count,Bin3_Gradient_sensitive_overshoot_pct,Bin4_Gradient_erased_count,Bin4_Gradient_erased_pct,Bin5_Gradient_inverted_count,Bin5_Gradient_inverted_pct,Bin6_Non_tracking_contradiction_count,Bin6_Non_tracking_contradiction_pct,Bin7_Non_tracking_rigidity_count,Bin7_Non_tracking_rigidity_pct,Tracking_A_bins12_count,Tracking_A_bins12_pct,All_tracking_bins123_count,All_tracking_bins123_pct,NonTracking_B_bins67_count,NonTracking_B_bins67_pct,Deterministic_count,Deterministic_pct
+DeepSeek R1,CN,36,2,5.6,3,8.3,3,8.3,12,33.3,14,38.9,1,2.8,1,2.8,5,13.9,8,22.2,2,5.6,23,63.9
+DeepSeek R1,EN,36,1,2.8,8,22.2,0,0.0,12,33.3,1,2.8,5,13.9,9,25.0,9,25.0,9,25.0,14,38.9,25,69.4
+DeepSeek R1,ES,36,3,8.3,6,16.7,0,0.0,11,30.6,4,11.1,3,8.3,9,25.0,9,25.0,9,25.0,12,33.3,22,61.1
+DeepSeek R1,JP,36,3,8.3,2,5.6,8,22.2,11,30.6,9,25.0,1,2.8,2,5.6,5,13.9,13,36.1,3,8.3,17,47.2
+GPT-4o,CN,36,2,5.6,1,2.8,4,11.1,18,50.0,9,25.0,2,5.6,0,0.0,3,8.3,7,19.4,2,5.6,22,61.1
+GPT-4o,EN,36,3,8.3,2,5.6,2,5.6,20,55.6,5,13.9,0,0.0,4,11.1,5,13.9,7,19.4,4,11.1,25,69.4
+GPT-4o,ES,36,3,8.3,1,2.8,4,11.1,18,50.0,3,8.3,4,11.1,3,8.3,4,11.1,8,22.2,7,19.4,21,58.3
+GPT-4o,JP,36,2,5.6,2,5.6,7,19.4,19,52.8,5,13.9,0,0.0,1,2.8,4,11.1,11,30.6,1,2.8,24,66.7
+Gemini Flash,CN,36,3,8.3,11,30.6,5,13.9,7,19.4,8,22.2,2,5.6,0,0.0,14,38.9,19,52.8,2,5.6,17,47.2
+Gemini Flash,EN,36,2,5.6,12,33.3,1,2.8,6,16.7,9,25.0,3,8.3,3,8.3,14,38.9,15,41.7,6,16.7,20,55.6
+Gemini Flash,ES,36,1,2.8,14,38.9,1,2.8,7,19.4,5,13.9,4,11.1,4,11.1,15,41.7,16,44.4,8,22.2,24,66.7
+Gemini Flash,JP,36,6,16.7,3,8.3,6,16.7,6,16.7,12,33.3,3,8.3,0,0.0,9,25.0,15,41.7,3,8.3,15,41.7
+Mistral Large,CN,36,1,2.8,4,11.1,14,38.9,7,19.4,9,25.0,1,2.8,0,0.0,5,13.9,19,52.8,1,2.8,14,38.9
+Mistral Large,EN,36,8,22.2,8,22.2,9,25.0,3,8.3,8,22.2,0,0.0,0,0.0,16,44.4,25,69.4,0,0.0,9,25.0
+Mistral Large,ES,36,7,19.4,11,30.6,7,19.4,4,11.1,4,11.1,3,8.3,0,0.0,18,50.0,25,69.4,3,8.3,14,38.9
+Mistral Large,JP,36,1,2.8,6,16.7,18,50.0,2,5.6,8,22.2,1,2.8,0,0.0,7,19.4,25,69.4,1,2.8,10,27.8

@@ -1,0 +1,13 @@
+Language,Dilemma,N,Bin1_Calibrated_count,Bin1_Calibrated_pct,Bin2_Rigid_tracking_count,Bin2_Rigid_tracking_pct,Bin3_Gradient_sensitive_overshoot_count,Bin3_Gradient_sensitive_overshoot_pct,Bin4_Gradient_erased_count,Bin4_Gradient_erased_pct,Bin5_Gradient_inverted_count,Bin5_Gradient_inverted_pct,Bin6_Non_tracking_contradiction_count,Bin6_Non_tracking_contradiction_pct,Bin7_Non_tracking_rigidity_count,Bin7_Non_tracking_rigidity_pct,Tracking_A_bins12_count,Tracking_A_bins12_pct,All_tracking_bins123_count,All_tracking_bins123_pct,NonTracking_B_bins67_count,NonTracking_B_bins67_pct,Deterministic_count,Deterministic_pct
+CN,HL,48,4,8.3,6,12.5,3,6.2,11,22.9,22,45.8,1,2.1,1,2.1,10,20.8,13,27.1,2,4.2,18,37.5
+CN,MF,48,1,2.1,11,22.9,3,6.2,25,52.1,7,14.6,1,2.1,0,0.0,12,25.0,15,31.2,1,2.1,36,75.0
+CN,YO,48,3,6.2,2,4.2,20,41.7,8,16.7,11,22.9,4,8.3,0,0.0,5,10.4,25,52.1,4,8.3,22,45.8
+EN,HL,48,5,10.4,7,14.6,5,10.4,11,22.9,9,18.8,1,2.1,10,20.8,12,25.0,17,35.4,11,22.9,24,50.0
+EN,MF,48,4,8.3,14,29.2,1,2.1,22,45.8,7,14.6,0,0.0,0,0.0,18,37.5,19,39.6,0,0.0,34,70.8
+EN,YO,48,5,10.4,9,18.8,6,12.5,8,16.7,7,14.6,7,14.6,6,12.5,14,29.2,20,41.7,13,27.1,21,43.8
+ES,HL,48,4,8.3,12,25.0,4,8.3,8,16.7,4,8.3,8,16.7,8,16.7,16,33.3,20,41.7,16,33.3,26,54.2
+ES,MF,48,3,6.2,12,25.0,3,6.2,24,50.0,6,12.5,0,0.0,0,0.0,15,31.2,18,37.5,0,0.0,36,75.0
+ES,YO,48,7,14.6,8,16.7,5,10.4,8,16.7,6,12.5,6,12.5,8,16.7,15,31.2,20,41.7,14,29.2,19,39.6
+JP,HL,48,2,4.2,3,6.2,19,39.6,8,16.7,13,27.1,1,2.1,2,4.2,5,10.4,24,50.0,3,6.2,22,45.8
+JP,MF,48,6,12.5,5,10.4,9,18.8,22,45.8,6,12.5,0,0.0,0,0.0,11,22.9,20,41.7,0,0.0,29,60.4
+JP,YO,48,4,8.3,5,10.4,11,22.9,8,16.7,15,31.2,4,8.3,1,2.1,9,18.8,20,41.7,5,10.4,15,31.2

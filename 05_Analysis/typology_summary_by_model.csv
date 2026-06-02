@@ -1,0 +1,5 @@
+LLM_std,N,Bin1_Calibrated_count,Bin1_Calibrated_pct,Bin2_Rigid_tracking_count,Bin2_Rigid_tracking_pct,Bin3_Gradient_sensitive_overshoot_count,Bin3_Gradient_sensitive_overshoot_pct,Bin4_Gradient_erased_count,Bin4_Gradient_erased_pct,Bin5_Gradient_inverted_count,Bin5_Gradient_inverted_pct,Bin6_Non_tracking_contradiction_count,Bin6_Non_tracking_contradiction_pct,Bin7_Non_tracking_rigidity_count,Bin7_Non_tracking_rigidity_pct,Tracking_A_bins12_count,Tracking_A_bins12_pct,All_tracking_bins123_count,All_tracking_bins123_pct,NonTracking_B_bins67_count,NonTracking_B_bins67_pct,Deterministic_count,Deterministic_pct
+DeepSeek R1,144,9,6.2,19,13.2,11,7.6,46,31.9,28,19.4,10,6.9,21,14.6,28,19.4,39,27.1,31,21.5,87,60.4
+GPT-4o,144,10,6.9,6,4.2,17,11.8,75,52.1,22,15.3,6,4.2,8,5.6,16,11.1,33,22.9,14,9.7,92,63.9
+Gemini Flash,144,12,8.3,40,27.8,13,9.0,26,18.1,34,23.6,12,8.3,7,4.9,52,36.1,65,45.1,19,13.2,76,52.8
+Mistral Large,144,17,11.8,29,20.1,48,33.3,16,11.1,29,20.1,5,3.5,0,0.0,46,31.9,94,65.3,5,3.5,47,32.6

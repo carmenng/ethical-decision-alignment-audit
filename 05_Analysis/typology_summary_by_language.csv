@@ -1,0 +1,5 @@
+Language,N,Bin1_Calibrated_count,Bin1_Calibrated_pct,Bin2_Rigid_tracking_count,Bin2_Rigid_tracking_pct,Bin3_Gradient_sensitive_overshoot_count,Bin3_Gradient_sensitive_overshoot_pct,Bin4_Gradient_erased_count,Bin4_Gradient_erased_pct,Bin5_Gradient_inverted_count,Bin5_Gradient_inverted_pct,Bin6_Non_tracking_contradiction_count,Bin6_Non_tracking_contradiction_pct,Bin7_Non_tracking_rigidity_count,Bin7_Non_tracking_rigidity_pct,Tracking_A_bins12_count,Tracking_A_bins12_pct,All_tracking_bins123_count,All_tracking_bins123_pct,NonTracking_B_bins67_count,NonTracking_B_bins67_pct,Deterministic_count,Deterministic_pct
+CN,144,8,5.6,19,13.2,26,18.1,44,30.6,40,27.8,6,4.2,1,0.7,27,18.8,53,36.8,7,4.9,76,52.8
+EN,144,14,9.7,30,20.8,12,8.3,41,28.5,23,16.0,8,5.6,16,11.1,44,30.6,56,38.9,24,16.7,79,54.9
+ES,144,14,9.7,32,22.2,12,8.3,40,27.8,16,11.1,14,9.7,16,11.1,46,31.9,58,40.3,30,20.8,81,56.2
+JP,144,12,8.3,13,9.0,39,27.1,38,26.4,34,23.6,5,3.5,3,2.1,25,17.4,64,44.4,8,5.6,66,45.8

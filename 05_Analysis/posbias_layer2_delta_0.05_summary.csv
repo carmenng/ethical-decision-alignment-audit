@@ -1,0 +1,12 @@
+Metric,Value,Of_total
+Cells with bin change,54,576
+Direction flips,6,576
+Gradient fit changes,11,576
+Floor-clipped edge cases,11,54
+Bin 1 (Calibrated),48 → 80 (+32),576
+Bin 2 (Rigid tracking),94 → 61 (-33),576
+Bin 3 (Gradient-sensitive overshoot),89 → 88 (-1),576
+Bin 4 (Gradient erased),163 → 164 (+1),576
+Bin 5 (Gradient inverted),113 → 108 (-5),576
+Bin 6 (Non-tracking contradiction),33 → 34 (+1),576
+Bin 7 (Non-tracking rigidity),36 → 41 (+5),576

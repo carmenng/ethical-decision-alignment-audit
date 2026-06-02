@@ -1,0 +1,26 @@
+LLM_std,Language,N,Deterministic_count,Deterministic_pct
+GPT-4o,EN,36,25,69.4
+GPT-4o,CN,36,22,61.1
+GPT-4o,JP,36,24,66.7
+GPT-4o,ES,36,21,58.3
+DeepSeek R1,EN,36,25,69.4
+DeepSeek R1,CN,36,23,63.9
+DeepSeek R1,JP,36,17,47.2
+DeepSeek R1,ES,36,22,61.1
+Mistral Large,EN,36,9,25.0
+Mistral Large,CN,36,14,38.9
+Mistral Large,JP,36,10,27.8
+Mistral Large,ES,36,14,38.9
+Gemini Flash,EN,36,20,55.6
+Gemini Flash,CN,36,17,47.2
+Gemini Flash,JP,36,15,41.7
+Gemini Flash,ES,36,24,66.7
+Overall,EN,144,79,54.9
+Overall,CN,144,76,52.8
+Overall,JP,144,66,45.8
+Overall,ES,144,81,56.2
+GPT-4o,Overall,144,92,63.9
+DeepSeek R1,Overall,144,87,60.4
+Mistral Large,Overall,144,47,32.6
+Gemini Flash,Overall,144,76,52.8
+Overall,Overall,576,302,52.4

@@ -1,0 +1,21 @@
+LLM_std,Dilemma,N,Deterministic_count,Deterministic_pct
+GPT-4o,MF,48,42,87.5
+GPT-4o,YO,48,21,43.8
+GPT-4o,HL,48,29,60.4
+DeepSeek R1,MF,48,38,79.2
+DeepSeek R1,YO,48,25,52.1
+DeepSeek R1,HL,48,24,50.0
+Mistral Large,MF,48,21,43.8
+Mistral Large,YO,48,11,22.9
+Mistral Large,HL,48,15,31.2
+Gemini Flash,MF,48,34,70.8
+Gemini Flash,YO,48,20,41.7
+Gemini Flash,HL,48,22,45.8
+Overall,MF,192,135,70.3
+Overall,YO,192,77,40.1
+Overall,HL,192,90,46.9
+GPT-4o,Overall,144,92,63.9
+DeepSeek R1,Overall,144,87,60.4
+Mistral Large,Overall,144,47,32.6
+Gemini Flash,Overall,144,76,52.8
+Overall,Overall,576,302,52.4

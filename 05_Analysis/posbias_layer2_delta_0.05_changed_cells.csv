@@ -1,0 +1,55 @@
+LLM_std,Dilemma,Domain,Prompting,Language,FA_original,FA_adjusted,LC_original,LC_adjusted,Bin_original,Bin_adjusted,Type_original,Type_adjusted,Bin_changed,GradientFit_original,GradientFit_adjusted,Direction_original,Direction_adjusted,Deliberation_original,Deliberation_adjusted,Floor_clipped
+Gemini Flash,HL,D1,PLAIN,EN,0.99,0.94,1,1,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Mistral Large,HL,D1,ZSCOT,EN,0.5,0.45,-3,-3,5,6,Gradient inverted,Non-tracking contradiction,True,Inverting,Inverting,A-territory,B-territory,Variable,Variable,False
+Gemini Flash,HL,D1,PLAIN,CN,0.97,0.92,1,1,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+DeepSeek R1,HL,D1,CC,JP,0.02,0.0,-1,1,7,3,Non-tracking rigidity,Gradient-sensitive overshoot,True,Inverting,Tracking,B-territory,B-territory,Near-deterministic,Deterministic,True
+DeepSeek R1,HL,D1,FSCOT,ES,0.08,0.03,-1,-1,6,7,Non-tracking contradiction,Non-tracking rigidity,True,Inverting,Inverting,B-territory,B-territory,Variable,Near-deterministic,False
+GPT-4o,HL,D2,PLAIN,EN,0.01,0.0,1,-1,3,7,Gradient-sensitive overshoot,Non-tracking rigidity,True,Tracking,Inverting,B-territory,B-territory,Near-deterministic,Deterministic,True
+GPT-4o,HL,D2,CC,EN,0.0,0.0,0,-1,4,7,Gradient erased,Non-tracking rigidity,True,Undifferentiated,Inverting,B-territory,B-territory,Deterministic,Deterministic,True
+Gemini Flash,HL,D2,CC,EN,0.97,0.92,1,1,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Mistral Large,HL,D2,PLAIN,CN,0.99,0.94,2,2,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Gemini Flash,HL,D2,PLAIN,CN,0.5,0.45,-1,-1,5,6,Gradient inverted,Non-tracking contradiction,True,Inverting,Inverting,A-territory,B-territory,Variable,Variable,False
+Gemini Flash,HL,D2,CC,CN,0.95,0.9,1,1,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Mistral Large,HL,D2,PLAIN,JP,0.99,0.94,2,2,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Mistral Large,HL,D2,CC,JP,0.99,0.94,2,2,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+GPT-4o,HL,D2,PLAIN,ES,0.04,0.0,1,-1,3,7,Gradient-sensitive overshoot,Non-tracking rigidity,True,Tracking,Inverting,B-territory,B-territory,Near-deterministic,Deterministic,True
+Gemini Flash,HL,D2,PLAIN,ES,0.09,0.04,-3,-3,6,7,Non-tracking contradiction,Non-tracking rigidity,True,Inverting,Inverting,B-territory,B-territory,Variable,Near-deterministic,False
+GPT-4o,HL,D2,CC,ES,0.01,0.0,1,-1,3,7,Gradient-sensitive overshoot,Non-tracking rigidity,True,Tracking,Inverting,B-territory,B-territory,Near-deterministic,Deterministic,True
+DeepSeek R1,HL,D2,FSCOT,ES,0.5,0.45,1,1,1,3,Calibrated,Gradient-sensitive overshoot,True,Tracking,Tracking,A-territory,B-territory,Variable,Variable,False
+DeepSeek R1,HL,D3,PLAIN,EN,0.0,0.0,-2,0,7,4,Non-tracking rigidity,Gradient erased,True,Inverting,Undifferentiated,B-territory,B-territory,Deterministic,Deterministic,True
+DeepSeek R1,HL,D3,PLAIN,CN,0.03,0.0,-2,0,7,4,Non-tracking rigidity,Gradient erased,True,Inverting,Undifferentiated,B-territory,B-territory,Near-deterministic,Deterministic,True
+Mistral Large,HL,D3,PLAIN,CN,0.99,0.94,1,1,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+GPT-4o,HL,D3,FSCOT,CN,0.99,0.94,2,2,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Gemini Flash,HL,D3,FSCOT,CN,0.98,0.93,1,1,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+DeepSeek R1,HL,D3,PLAIN,JP,0.03,0.0,-2,0,7,4,Non-tracking rigidity,Gradient erased,True,Inverting,Undifferentiated,B-territory,B-territory,Near-deterministic,Deterministic,True
+DeepSeek R1,HL,D3,CC,JP,0.51,0.46,-1,-1,5,6,Gradient inverted,Non-tracking contradiction,True,Inverting,Inverting,A-territory,B-territory,Variable,Variable,False
+GPT-4o,HL,D3,FSCOT,JP,0.99,0.94,2,2,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+DeepSeek R1,HL,D3,PLAIN,ES,0.0,0.0,-2,0,7,4,Non-tracking rigidity,Gradient erased,True,Inverting,Undifferentiated,B-territory,B-territory,Deterministic,Deterministic,True
+DeepSeek R1,HL,D3,FSCOT,ES,0.98,0.93,3,3,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Mistral Large,YO,D1,ZSCOT,EN,0.51,0.46,-1,-1,5,6,Gradient inverted,Non-tracking contradiction,True,Inverting,Inverting,A-territory,B-territory,Variable,Variable,False
+Mistral Large,YO,D1,FSCOT,EN,0.97,0.92,1,1,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Gemini Flash,YO,D1,FSCOT,CN,0.96,0.91,3,3,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Mistral Large,YO,D1,PLAIN,JP,0.99,0.94,1,1,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Mistral Large,YO,D1,CC,JP,0.97,0.92,1,1,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Mistral Large,YO,D1,FSCOT,ES,0.99,0.94,1,1,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Gemini Flash,YO,D2,CC,EN,0.53,0.48,-1,-1,5,6,Gradient inverted,Non-tracking contradiction,True,Inverting,Inverting,A-territory,B-territory,Variable,Variable,False
+DeepSeek R1,YO,D2,FSCOT,EN,0.96,0.91,2,2,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+DeepSeek R1,YO,D2,ZSCOT,CN,0.95,0.9,1,1,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+GPT-4o,YO,D2,FSCOT,JP,0.99,0.94,1,1,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Gemini Flash,YO,D2,PLAIN,ES,0.08,0.03,-3,-3,6,7,Non-tracking contradiction,Non-tracking rigidity,True,Inverting,Inverting,B-territory,B-territory,Variable,Near-deterministic,False
+DeepSeek R1,YO,D2,FSCOT,ES,0.96,0.91,2,2,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Gemini Flash,YO,D3,PLAIN,CN,0.06,0.01,-1,-1,6,7,Non-tracking contradiction,Non-tracking rigidity,True,Inverting,Inverting,B-territory,B-territory,Variable,Near-deterministic,False
+DeepSeek R1,YO,D3,FSCOT,JP,0.96,0.91,1,1,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+DeepSeek R1,MF,D1,PLAIN,CN,0.98,0.93,2,2,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Gemini Flash,MF,D1,PLAIN,CN,0.98,0.93,3,3,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+DeepSeek R1,MF,D1,PLAIN,JP,0.98,0.93,2,2,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+DeepSeek R1,MF,D1,PLAIN,ES,0.99,0.94,3,3,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Gemini Flash,MF,D1,CC,CN,0.95,0.9,3,3,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+DeepSeek R1,MF,D1,ZSCOT,EN,0.98,0.93,2,2,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Mistral Large,MF,D1,FSCOT,EN,0.03,0.0,0,-1,4,7,Gradient erased,Non-tracking rigidity,True,Undifferentiated,Inverting,B-territory,B-territory,Near-deterministic,Deterministic,True
+Mistral Large,MF,D1,FSCOT,ES,0.03,0.0,0,-1,4,7,Gradient erased,Non-tracking rigidity,True,Undifferentiated,Inverting,B-territory,B-territory,Near-deterministic,Deterministic,True
+Mistral Large,MF,D2,PLAIN,JP,0.97,0.92,1,1,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Mistral Large,MF,D2,FSCOT,CN,0.98,0.93,1,1,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Gemini Flash,MF,D3,PLAIN,JP,0.98,0.93,3,3,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Mistral Large,MF,D3,CC,JP,0.99,0.94,3,3,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False
+Gemini Flash,MF,D3,ZSCOT,JP,0.99,0.94,3,3,2,1,Rigid tracking,Calibrated,True,Tracking,Tracking,A-territory,A-territory,Near-deterministic,Variable,False

@@ -1,0 +1,13 @@
+LLM_std,Dilemma,N,Bin1_Calibrated_count,Bin1_Calibrated_pct,Bin2_Rigid_tracking_count,Bin2_Rigid_tracking_pct,Bin3_Gradient_sensitive_overshoot_count,Bin3_Gradient_sensitive_overshoot_pct,Bin4_Gradient_erased_count,Bin4_Gradient_erased_pct,Bin5_Gradient_inverted_count,Bin5_Gradient_inverted_pct,Bin6_Non_tracking_contradiction_count,Bin6_Non_tracking_contradiction_pct,Bin7_Non_tracking_rigidity_count,Bin7_Non_tracking_rigidity_pct,Tracking_A_bins12_count,Tracking_A_bins12_pct,All_tracking_bins123_count,All_tracking_bins123_pct,NonTracking_B_bins67_count,NonTracking_B_bins67_pct,Deterministic_count,Deterministic_pct
+DeepSeek R1,HL,48,2,4.2,1,2.1,5,10.4,5,10.4,11,22.9,5,10.4,19,39.6,3,6.2,8,16.7,24,50.0,24,50.0
+DeepSeek R1,MF,48,1,2.1,10,20.8,2,4.2,29,60.4,6,12.5,0,0.0,0,0.0,11,22.9,13,27.1,0,0.0,38,79.2
+DeepSeek R1,YO,48,6,12.5,8,16.7,4,8.3,12,25.0,11,22.9,5,10.4,2,4.2,14,29.2,18,37.5,7,14.6,25,52.1
+GPT-4o,HL,48,3,6.2,4,8.3,9,18.8,21,43.8,8,16.7,1,2.1,2,4.2,7,14.6,16,33.3,3,6.2,29,60.4
+GPT-4o,MF,48,4,8.3,0,0.0,0,0.0,40,83.3,4,8.3,0,0.0,0,0.0,4,8.3,4,8.3,0,0.0,42,87.5
+GPT-4o,YO,48,3,6.2,2,4.2,8,16.7,14,29.2,10,20.8,5,10.4,6,12.5,5,10.4,13,27.1,11,22.9,21,43.8
+Gemini Flash,HL,48,3,6.2,12,25.0,4,8.3,8,16.7,19,39.6,2,4.2,0,0.0,15,31.2,19,39.6,2,4.2,22,45.8
+Gemini Flash,MF,48,7,14.6,23,47.9,3,6.2,14,29.2,1,2.1,0,0.0,0,0.0,30,62.5,33,68.8,0,0.0,34,70.8
+Gemini Flash,YO,48,2,4.2,5,10.4,6,12.5,4,8.3,14,29.2,10,20.8,7,14.6,7,14.6,13,27.1,17,35.4,20,41.7
+Mistral Large,HL,48,7,14.6,11,22.9,13,27.1,4,8.3,10,20.8,3,6.2,0,0.0,18,37.5,31,64.6,3,6.2,15,31.2
+Mistral Large,MF,48,2,4.2,9,18.8,11,22.9,10,20.8,15,31.2,1,2.1,0,0.0,11,22.9,22,45.8,1,2.1,21,43.8
+Mistral Large,YO,48,8,16.7,9,18.8,24,50.0,2,4.2,4,8.3,1,2.1,0,0.0,17,35.4,41,85.4,1,2.1,11,22.9

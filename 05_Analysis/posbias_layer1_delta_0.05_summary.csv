@@ -1,0 +1,6 @@
+Label,Tau_original,Tau_adjusted,Change,Ordering_reversals,New_ties
+Overall,0.0856,0.0868,0.0012,0,19
+GPT-4o,0.0093,-0.0093,-0.0186,,
+DeepSeek R1,-0.0509,-0.0185,0.0324,,
+Mistral Large,0.3148,0.3056,-0.0092,,
+Gemini Flash,0.0694,0.0694,0.0,,

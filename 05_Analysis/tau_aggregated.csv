@@ -1,0 +1,104 @@
+Agg_Level,Label,Tau,Concordant,Discordant,Tied,N_pairs,N_groups
+Overall,All conditions,0.0856,311,237,316,864,144
+By LLM,LLM=DeepSeek R1,-0.0509,56,67,93,216,36
+By LLM,LLM=GPT-4o,0.0093,51,49,116,216,36
+By LLM,LLM=Gemini Flash,0.0694,79,64,73,216,36
+By LLM,LLM=Mistral Large,0.3148,125,57,34,216,36
+By Dilemma,Dilemma=HL,0.0035,106,105,77,288,48
+By Dilemma,Dilemma=MF,0.184,86,33,169,288,48
+By Dilemma,Dilemma=YO,0.0694,119,99,70,288,48
+By Prompting,Prompting=CC,0.0509,61,50,105,216,36
+By Prompting,Prompting=FSCOT,0.3194,107,38,71,216,36
+By Prompting,Prompting=PLAIN,0.0509,66,55,95,216,36
+By Prompting,Prompting=ZSCOT,-0.0787,77,94,45,216,36
+By Domain,Domain=D1,0.059,98,81,109,288,48
+By Domain,Domain=D2,0.1042,117,87,84,288,48
+By Domain,Domain=D3,0.0938,96,69,123,288,48
+By LLM × Dilemma,"LLM=DeepSeek R1, Dilemma=HL",-0.2778,17,37,18,72,12
+By LLM × Dilemma,"LLM=DeepSeek R1, Dilemma=MF",0.125,15,6,51,72,12
+By LLM × Dilemma,"LLM=DeepSeek R1, Dilemma=YO",0.0,24,24,24,72,12
+By LLM × Dilemma,"LLM=GPT-4o, Dilemma=HL",0.0694,22,17,33,72,12
+By LLM × Dilemma,"LLM=GPT-4o, Dilemma=MF",0.0417,7,4,61,72,12
+By LLM × Dilemma,"LLM=GPT-4o, Dilemma=YO",-0.0833,22,28,22,72,12
+By LLM × Dilemma,"LLM=Gemini Flash, Dilemma=HL",-0.0278,26,28,18,72,12
+By LLM × Dilemma,"LLM=Gemini Flash, Dilemma=MF",0.4167,33,3,36,72,12
+By LLM × Dilemma,"LLM=Gemini Flash, Dilemma=YO",-0.1806,20,33,19,72,12
+By LLM × Dilemma,"LLM=Mistral Large, Dilemma=HL",0.25,41,23,8,72,12
+By LLM × Dilemma,"LLM=Mistral Large, Dilemma=MF",0.1528,31,20,21,72,12
+By LLM × Dilemma,"LLM=Mistral Large, Dilemma=YO",0.5417,53,14,5,72,12
+By LLM × Prompting,"LLM=DeepSeek R1, Prompting=CC",-0.1296,10,17,27,54,9
+By LLM × Prompting,"LLM=DeepSeek R1, Prompting=FSCOT",0.2407,23,10,21,54,9
+By LLM × Prompting,"LLM=DeepSeek R1, Prompting=PLAIN",-0.1667,9,18,27,54,9
+By LLM × Prompting,"LLM=DeepSeek R1, Prompting=ZSCOT",-0.1481,14,22,18,54,9
+By LLM × Prompting,"LLM=GPT-4o, Prompting=CC",-0.1111,4,10,40,54,9
+By LLM × Prompting,"LLM=GPT-4o, Prompting=FSCOT",0.0556,18,15,21,54,9
+By LLM × Prompting,"LLM=GPT-4o, Prompting=PLAIN",0.0556,10,7,37,54,9
+By LLM × Prompting,"LLM=GPT-4o, Prompting=ZSCOT",0.037,19,17,18,54,9
+By LLM × Prompting,"LLM=Gemini Flash, Prompting=CC",0.0741,15,11,28,54,9
+By LLM × Prompting,"LLM=Gemini Flash, Prompting=FSCOT",0.4259,27,4,23,54,9
+By LLM × Prompting,"LLM=Gemini Flash, Prompting=PLAIN",0.0,18,18,18,54,9
+By LLM × Prompting,"LLM=Gemini Flash, Prompting=ZSCOT",-0.2222,19,31,4,54,9
+By LLM × Prompting,"LLM=Mistral Large, Prompting=CC",0.3704,32,12,10,54,9
+By LLM × Prompting,"LLM=Mistral Large, Prompting=FSCOT",0.5556,39,9,6,54,9
+By LLM × Prompting,"LLM=Mistral Large, Prompting=PLAIN",0.3148,29,12,13,54,9
+By LLM × Prompting,"LLM=Mistral Large, Prompting=ZSCOT",0.0185,25,24,5,54,9
+By LLM × Dilemma × Prompting,"LLM=DeepSeek R1, Dilemma=HL, Prompting=CC",-0.3889,3,10,5,18,3
+By LLM × Dilemma × Prompting,"LLM=DeepSeek R1, Dilemma=HL, Prompting=FSCOT",0.1667,10,7,1,18,3
+By LLM × Dilemma × Prompting,"LLM=DeepSeek R1, Dilemma=HL, Prompting=PLAIN",-0.2778,1,6,11,18,3
+By LLM × Dilemma × Prompting,"LLM=DeepSeek R1, Dilemma=HL, Prompting=ZSCOT",-0.6111,3,14,1,18,3
+By LLM × Dilemma × Prompting,"LLM=DeepSeek R1, Dilemma=MF, Prompting=CC",0.1667,3,0,15,18,3
+By LLM × Dilemma × Prompting,"LLM=DeepSeek R1, Dilemma=MF, Prompting=FSCOT",0.1667,4,1,13,18,3
+By LLM × Dilemma × Prompting,"LLM=DeepSeek R1, Dilemma=MF, Prompting=PLAIN",0.2222,6,2,10,18,3
+By LLM × Dilemma × Prompting,"LLM=DeepSeek R1, Dilemma=MF, Prompting=ZSCOT",-0.0556,2,3,13,18,3
+By LLM × Dilemma × Prompting,"LLM=DeepSeek R1, Dilemma=YO, Prompting=CC",-0.1667,4,7,7,18,3
+By LLM × Dilemma × Prompting,"LLM=DeepSeek R1, Dilemma=YO, Prompting=FSCOT",0.3889,9,2,7,18,3
+By LLM × Dilemma × Prompting,"LLM=DeepSeek R1, Dilemma=YO, Prompting=PLAIN",-0.4444,2,10,6,18,3
+By LLM × Dilemma × Prompting,"LLM=DeepSeek R1, Dilemma=YO, Prompting=ZSCOT",0.2222,9,5,4,18,3
+By LLM × Dilemma × Prompting,"LLM=GPT-4o, Dilemma=HL, Prompting=CC",0.0556,3,2,13,18,3
+By LLM × Dilemma × Prompting,"LLM=GPT-4o, Dilemma=HL, Prompting=FSCOT",0.3333,11,5,2,18,3
+By LLM × Dilemma × Prompting,"LLM=GPT-4o, Dilemma=HL, Prompting=PLAIN",0.1111,4,2,12,18,3
+By LLM × Dilemma × Prompting,"LLM=GPT-4o, Dilemma=HL, Prompting=ZSCOT",-0.2222,4,8,6,18,3
+By LLM × Dilemma × Prompting,"LLM=GPT-4o, Dilemma=MF, Prompting=CC",0.0,0,0,18,18,3
+By LLM × Dilemma × Prompting,"LLM=GPT-4o, Dilemma=MF, Prompting=FSCOT",-0.1667,1,4,13,18,3
+By LLM × Dilemma × Prompting,"LLM=GPT-4o, Dilemma=MF, Prompting=PLAIN",0.0,0,0,18,18,3
+By LLM × Dilemma × Prompting,"LLM=GPT-4o, Dilemma=MF, Prompting=ZSCOT",0.3333,6,0,12,18,3
+By LLM × Dilemma × Prompting,"LLM=GPT-4o, Dilemma=YO, Prompting=CC",-0.3889,1,8,9,18,3
+By LLM × Dilemma × Prompting,"LLM=GPT-4o, Dilemma=YO, Prompting=FSCOT",0.0,6,6,6,18,3
+By LLM × Dilemma × Prompting,"LLM=GPT-4o, Dilemma=YO, Prompting=PLAIN",0.0556,6,5,7,18,3
+By LLM × Dilemma × Prompting,"LLM=GPT-4o, Dilemma=YO, Prompting=ZSCOT",0.0,9,9,0,18,3
+By LLM × Dilemma × Prompting,"LLM=Gemini Flash, Dilemma=HL, Prompting=CC",-0.0556,4,5,9,18,3
+By LLM × Dilemma × Prompting,"LLM=Gemini Flash, Dilemma=HL, Prompting=FSCOT",0.7778,15,1,2,18,3
+By LLM × Dilemma × Prompting,"LLM=Gemini Flash, Dilemma=HL, Prompting=PLAIN",-0.1667,4,7,7,18,3
+By LLM × Dilemma × Prompting,"LLM=Gemini Flash, Dilemma=HL, Prompting=ZSCOT",-0.6667,3,15,0,18,3
+By LLM × Dilemma × Prompting,"LLM=Gemini Flash, Dilemma=MF, Prompting=CC",0.4444,8,0,10,18,3
+By LLM × Dilemma × Prompting,"LLM=Gemini Flash, Dilemma=MF, Prompting=FSCOT",0.1667,3,0,15,18,3
+By LLM × Dilemma × Prompting,"LLM=Gemini Flash, Dilemma=MF, Prompting=PLAIN",0.6111,11,0,7,18,3
+By LLM × Dilemma × Prompting,"LLM=Gemini Flash, Dilemma=MF, Prompting=ZSCOT",0.4444,11,3,4,18,3
+By LLM × Dilemma × Prompting,"LLM=Gemini Flash, Dilemma=YO, Prompting=CC",-0.1667,3,6,9,18,3
+By LLM × Dilemma × Prompting,"LLM=Gemini Flash, Dilemma=YO, Prompting=FSCOT",0.3333,9,3,6,18,3
+By LLM × Dilemma × Prompting,"LLM=Gemini Flash, Dilemma=YO, Prompting=PLAIN",-0.4444,3,11,4,18,3
+By LLM × Dilemma × Prompting,"LLM=Gemini Flash, Dilemma=YO, Prompting=ZSCOT",-0.4444,5,13,0,18,3
+By LLM × Dilemma × Prompting,"LLM=Mistral Large, Dilemma=HL, Prompting=CC",0.0556,8,7,3,18,3
+By LLM × Dilemma × Prompting,"LLM=Mistral Large, Dilemma=HL, Prompting=FSCOT",0.8333,16,1,1,18,3
+By LLM × Dilemma × Prompting,"LLM=Mistral Large, Dilemma=HL, Prompting=PLAIN",0.1667,9,6,3,18,3
+By LLM × Dilemma × Prompting,"LLM=Mistral Large, Dilemma=HL, Prompting=ZSCOT",-0.0556,8,9,1,18,3
+By LLM × Dilemma × Prompting,"LLM=Mistral Large, Dilemma=MF, Prompting=CC",0.3333,9,3,6,18,3
+By LLM × Dilemma × Prompting,"LLM=Mistral Large, Dilemma=MF, Prompting=FSCOT",0.1111,8,6,4,18,3
+By LLM × Dilemma × Prompting,"LLM=Mistral Large, Dilemma=MF, Prompting=PLAIN",0.2778,8,3,7,18,3
+By LLM × Dilemma × Prompting,"LLM=Mistral Large, Dilemma=MF, Prompting=ZSCOT",-0.1111,6,8,4,18,3
+By LLM × Dilemma × Prompting,"LLM=Mistral Large, Dilemma=YO, Prompting=CC",0.7222,15,2,1,18,3
+By LLM × Dilemma × Prompting,"LLM=Mistral Large, Dilemma=YO, Prompting=FSCOT",0.7222,15,2,1,18,3
+By LLM × Dilemma × Prompting,"LLM=Mistral Large, Dilemma=YO, Prompting=PLAIN",0.5,12,3,3,18,3
+By LLM × Dilemma × Prompting,"LLM=Mistral Large, Dilemma=YO, Prompting=ZSCOT",0.2222,11,7,0,18,3
+By Dilemma × Prompting,"Dilemma=HL, Prompting=CC",-0.0833,18,24,30,72,12
+By Dilemma × Prompting,"Dilemma=HL, Prompting=FSCOT",0.5278,52,14,6,72,12
+By Dilemma × Prompting,"Dilemma=HL, Prompting=PLAIN",-0.0417,18,21,33,72,12
+By Dilemma × Prompting,"Dilemma=HL, Prompting=ZSCOT",-0.3889,18,46,8,72,12
+By Dilemma × Prompting,"Dilemma=MF, Prompting=CC",0.2361,20,3,49,72,12
+By Dilemma × Prompting,"Dilemma=MF, Prompting=FSCOT",0.0694,16,11,45,72,12
+By Dilemma × Prompting,"Dilemma=MF, Prompting=PLAIN",0.2778,25,5,42,72,12
+By Dilemma × Prompting,"Dilemma=MF, Prompting=ZSCOT",0.1528,25,14,33,72,12
+By Dilemma × Prompting,"Dilemma=YO, Prompting=CC",0.0,23,23,26,72,12
+By Dilemma × Prompting,"Dilemma=YO, Prompting=FSCOT",0.3611,39,13,20,72,12
+By Dilemma × Prompting,"Dilemma=YO, Prompting=PLAIN",-0.0833,23,29,20,72,12
+By Dilemma × Prompting,"Dilemma=YO, Prompting=ZSCOT",0.0,34,34,4,72,12
