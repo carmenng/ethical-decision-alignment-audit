@@ -3,9 +3,12 @@
 A pre-deployment audit for attribute-based discrimination in LLM-governed social robots.
 
 Beta instrument for Trustworthy AI (under active development)  
-Extends the authors' peer-reviewed FAccT 2026 study (Ng and Kasneci, 2026; in press, June 2026) for deployer-facing use.  
+Extends the authors' paper "Auditing LLM-Governed Social Robots with Culture-Specific Moral Gradients" by Carmen Ng and Gjergji Kasneci (Technical University of Munich), accepted at the ACM Conference on Fairness, Accountability, and Transparency (FAccT '26).  
 
-DOI: [10.1145/3805689.3812366](https://doi.org/10.1145/3805689.3812366)
+- **Author preprint (OSF):** [osf.io/nj9zh](https://osf.io/nj9zh/)
+- **Version of Record (ACM):** [doi.org/10.1145/3805689.3812366](https://doi.org/10.1145/3805689.3812366)
+
+*Please cite the ACM published version.*
 
 ## What this does ##
 
